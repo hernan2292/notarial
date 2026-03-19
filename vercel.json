@@ -1,0 +1,20 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "vite",
+  "env": {
+    "VITE_WALLETCONNECT_PROJECT_ID": "@walletconnect_project_id",
+    "VITE_WORLD_ID_APP_ID": "@world_id_app_id",
+    "VITE_CROSSMINT_CLIENT_ID": "@crossmint_client_id",
+    "VITE_NOTARIAL_NFT_ADDRESS": "@notarial_nft_address",
+    "VITE_PROPERTY_ESCROW_ADDRESS": "@property_escrow_address"
+  },
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://notarial-api.vercel.app/api/:path*"
+    }
+  ]
+}
