@@ -204,7 +204,7 @@ export default function PropertyForm() {
             <span className="text-white/80">${formData.priceUSD ? (parseFloat(formData.priceUSD) * 0.04).toLocaleString() : '0'}</span>
           </div>
           <div className="flex justify-between text-sm">
-            <span className="text-white/60">Costo Notarial (<1%)</span>
+            <span className="text-white/60">Costo Notarial (&lt;1%)</span>
             <span className="text-success font-semibold">${formData.priceUSD ? (parseFloat(formData.priceUSD) * 0.005).toLocaleString() : '0'}</span>
           </div>
           <div className="border-t border-white/10 pt-2 flex justify-between font-bold">

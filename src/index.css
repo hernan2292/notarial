@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  
   body {
     @apply bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -64,7 +60,7 @@
     @apply glass-strong rounded-2xl p-8 
            shadow-2xl shadow-black/20
            transition-all duration-300 
-           hover:shadow-3xl hover:shadow-primary-500/10
+           hover:shadow-2xl hover:shadow-primary-500/10
            hover:border-primary-500/30;
   }
 
@@ -126,7 +122,7 @@
 
   /* Loading spinner */
   .spinner {
-    @apply inline-block w-6 h-6 border-3 border-white/20 border-t-white rounded-full animate-spin;
+    @apply inline-block w-6 h-6 border-[3px] border-white/20 border-t-white rounded-full animate-spin;
   }
 
   /* Scrollbar styling */
